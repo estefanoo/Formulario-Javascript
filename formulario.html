@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>formulario</title>
+</head>
+
+<body class="bg-dark">
+
+<div class="container">
+    <div class="row justify-content-center">
+        <form class="col-6" method="post" id="formulario" style="margin-top:50px;">
+            <h1 class="text-center text-light">REGISTRO</h1>
+            <div class="form-row text-light justify-content-center">
+                <div class="col-10">
+                    <label for="nombre">nombre: </label>
+                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+                </div>
+
+                <div class="col-10">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido">
+                </div>
+
+                <div class="col-10">
+                    <label for="edad">Edad: </label>
+                    <input type="number" class="form-control" placeholder="Edad" id="edad" name="edad">
+                </div>
+
+                <div class="col-10">
+                    <label for="email">Email: </label>
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+                </div>
+
+                <div class="col-10">
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" class="form-control" placeholder="Contraseña" id="pass" name="pass">
+                </div>
+
+                <div class="col-10">
+                    <label for="repetirPass">Repetir Contraseña: </label>
+                    <input type="password" class="form-control" placeholder="Repetir contraseña" id="repetirPass" name="repetirPass">
+                </div>
+
+                <span id="formError"></span>
+
+                <div class="col-sm-10 mt-3">
+                    <button type="submit" class="btn btn-light">Registrarme</button>
+                </div>
+
+            </div>
+        </form>
+
+        <h1 style="color:white; margin-top:200px; " id="registrado" class="text-light"></h1>
+
+    </div>
+</div>
+<script src="javascript/registro.js"></script>
+</body>
+</html>
